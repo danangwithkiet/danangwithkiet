@@ -1,189 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiet Da Nang | Link Bio</title>
-
-  <!-- SEO -->
-  <meta name="description"
-    content="Kiet Da Nang – Travel Creator, Walking Tour, Real Local Life in Da Nang, Vietnam." />
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Da Nang With Kiet – Link Bio</title>
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      min-height: 100vh;
+      margin: 0;
+      background: #111;
       display: flex;
       justify-content: center;
-      align-items: center;
+      padding: 24px 12px;
+      color: #fff;
     }
 
-    .container {
+    /* Card */
+    .card {
       width: 100%;
-      max-width: 420px;
-      padding: 24px;
+      max-width: 390px;
+      background: #1c1c1c;
+      border-radius: 28px;
+      overflow: hidden;
+    }
+
+    /* Cover */
+    .cover {
+      height: 160px;
+      background: linear-gradient(rgba(0, 0, 0, .5),
+          rgba(0, 0, 0, .8)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+    }
+
+    /* Profile */
+    .profile {
       text-align: center;
+      padding: 0 24px 24px;
+      margin-top: -48px;
     }
 
     .avatar {
       width: 96px;
       height: 96px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid rgba(255, 255, 255, 0.8);
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .bio {
-      font-size: 14px;
-      opacity: 0.85;
-      margin-bottom: 24px;
-      line-height: 1.4;
-    }
-
-    .links a {
+      background: #000;
+      border: 4px solid #1c1c1c;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 16px;
-      margin: 12px 0;
-      border-radius: 14px;
+    }
+
+    /* Logo SVG scale */
+    .avatar svg {
+      width: 64px;
+      height: 64px;
+    }
+
+    h1 {
+      margin: 16px 0 4px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 13px;
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+
+    /* Buttons */
+    .links a {
+      display: block;
+      margin: 10px 0;
+      padding: 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(6px);
-      transition: transform 0.2s ease, background 0.2s ease;
+      color: #fff;
+      font-size: 15px;
+      transition: all .25s ease;
     }
 
     .links a:hover {
-      transform: scale(1.03);
-      background: rgba(255, 255, 255, 0.25);
+      background: #fff;
+      color: #000;
     }
 
-    .youtube {
-      background: #ff0000;
+    /* Social */
+    .social {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
     }
 
-    .tiktok {
-      background: #000000;
+    .social a svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+      opacity: .75;
+      transition: .2s;
     }
 
-    .instagram {
-      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-    }
-
-    .facebook {
-      background: #1877f2;
-    }
-
-    .footer {
-      margin-top: 28px;
-      font-size: 12px;
-      opacity: 0.6;
-    }
-
-    @media (max-width: 360px) {
-      h1 {
-        font-size: 22px;
-      }
+    .social a:hover svg {
+      opacity: 1;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="card">
 
-    <!-- Avatar -->
-    <img src="avatar.jpg" alt="Kiet Da Nang" class="avatar">
+    <div class="cover"></div>
 
-    <!-- Name -->
-    <h1>Kiet Da Nang 🇻🇳</h1>
+    <div class="profile">
 
-    <!-- Bio -->
-    <p class="bio">
-      Travel Creator • Walking Tour <br>
-      Real Local Life in Da Nang
-    </p>
-
-    <!-- Links -->
-    <div class="links">
-
-      <!-- YouTube Main -->
-      <a href="https://www.youtube.com/@danangwithkiet" target="_blank" class="youtube">
-        <svg role="img" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-          <title>YouTube</title>
-          <path fill="currentColor"
-            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.017 3.017 0 0 0 .502 6.186 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .502 5.814 3.017 3.017 0 0 0 2.121 2.136C4.495 20.5 12 20.5 12 20.5s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+      <!-- LOGO -->
+      <div class="avatar">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00c6ff" />
+              <stop offset="100%" stop-color="#0072ff" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="56" fill="url(#g)" />
+          <path d="M45 30v60M45 60l30-30M45 60l30 30" stroke="#fff" stroke-width="8" stroke-linecap="round"
+            stroke-linejoin="round" fill="none" />
         </svg>
-        YouTube — Da Nang With Kiet
-      </a>
+      </div>
 
-      <!-- YouTube Second -->
-      <a href="https://www.youtube.com/@kietodannang" target="_blank" class="youtube">
-        <svg role="img" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-          <title>YouTube</title>
-          <path fill="currentColor"
-            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.017 3.017 0 0 0 .502 6.186 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .502 5.814 3.017 3.017 0 0 0 2.121 2.136C4.495 20.5 12 20.5 12 20.5s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-        </svg>
-        YouTube — Kiet O Da Nang
-      </a>
+      <h1>Da Nang With Kiet</h1>
+      <div class="role">Travel • Walking Tour • Local Life</div>
 
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@kietdanang365" target="_blank" class="tiktok">
-        <svg role="img" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-          <title>TikTok</title>
-          <path fill="currentColor"
-            d="M12.525.02c1.31-.02 2.61-.02 3.92-.02.23 2.58 1.53 4.9 3.6 6.37 1.2.86 2.63 1.42 4.18 1.62v3.72c-1.47.02-2.92-.2-4.29-.68-.96-.34-1.86-.78-2.7-1.3v6.68c0 3.44-2.06 6.59-5.27 7.83-3.16 1.23-6.86.32-9.13-2.28-1.3-1.49-1.96-3.4-1.83-5.34.26-3.96 3.73-7.13 7.72-7.2.7-.02 1.38.08 2.03.28v3.88c-.65-.2-1.35-.3-2.06-.26-1.98.1-3.57 1.76-3.64 3.74-.05 1.16.44 2.26 1.3 3.03 1.65 1.5 4.28.93 5.2-1.12.28-.62.38-1.3.36-1.98V.02z" />
-        </svg>
-        TikTok — @kietdanang365
-      </a>
+      <div class="links">
+        <a href="https://www.youtube.com/@danangwithkiet" target="_blank">YouTube Channel</a>
+        <a href="https://www.youtube.com/@kietodannang" target="_blank">YouTube Vlog 2</a>
+        <a href="https://www.facebook.com/danangwithkiet" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@kietdanang365" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/danangwithkiet/" target="_blank">Instagram</a>
+      </div>
 
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/danangwithkiet/" target="_blank" class="instagram">
-        <svg role="img" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-          <title>Instagram</title>
-          <path fill="currentColor"
-            d="M7.5 2C4.46 2 2 4.46 2 7.5v9c0 3.04 2.46 5.5 5.5 5.5h9c3.04 0 5.5-2.46 5.5-5.5v-9C22 4.46 19.54 2 16.5 2h-9zm9 2c1.93 0 3.5 1.57 3.5 3.5v9c0 1.93-1.57 3.5-3.5 3.5h-9C5.57 20 4 18.43 4 16.5v-9C4 5.57 5.57 4 7.5 4h9zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
-        </svg>
-        Instagram — @danangwithkiet
-      </a>
+      <!-- SOCIAL ICONS -->
+      <div class="social">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@danangwithkiet" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C17.7 2.7 12 2.7 12 2.7h0s-5.7 0-8.6.3c-.4 0-1.3.1-2.1.9C.7 4.6.5 6.2.5 6.2S0 8.1 0 10v2c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.3.3 7.3.3s5.7 0 8.6-.3c.4 0 1.3-.1 2.1-.9.6-.7.8-2.3.8-2.3s.5-1.9.5-3.8v-2c0-1.9-.5-3.8-.5-3.8zM9.6 13.5V7.9l5.4 2.8-5.4 2.8z" />
+          </svg>
+        </a>
 
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/danangwithkiet" target="_blank" class="facebook">
-        <svg role="img" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-          <title>Facebook</title>
-          <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/danangwithkiet" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3 1.8-4.7 4.6-4.7 1.3 0 2.4.1 2.7.1v3.1h-1.9c-1.5 0-1.8.7-1.8 1.7v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z" />
+          </svg>
+        </a>
 
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@kietdanang365" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M21 7.3c-1.5 0-3-.5-4.1-1.5v9.3c0 4.3-3.5 7.9-7.9 7.9S1.1 19.4 1.1 15.1 4.6 7.2 9 7.2c.4 0 .9 0 1.3.1v3.9c-.4-.1-.8-.2-1.3-.2-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4V0h3.8c.4 2.2 2.3 3.9 4.5 4.2v3.1z" />
+          </svg>
+        </a>
 
-    <!-- Footer -->
-    <div class=" footer">
-            © 2026 Kiet Da Nang <br>
-            Real Travel • No Script
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/danangwithkiet/" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 7.9A3.1 3.1 0 1 1 15.1 12 3.1 3.1 0 0 1 12 15.1zm4.9-8.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z" />
+          </svg>
+        </a>
+      </div>
+
     </div>
-
   </div>
 
 </body>
