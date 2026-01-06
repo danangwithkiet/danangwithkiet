@@ -32,11 +32,13 @@
 
     /* Cover */
     .cover {
-      height: 160px;
-      background: linear-gradient(rgba(0, 0, 0, .5),
-          rgba(0, 0, 0, .8)),
-        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+      height: 170px;
+      background:
+        linear-gradient(rgba(0, 0, 0, .35),
+          rgba(0, 0, 0, .75)),
+        url("https://raw.githubusercontent.com/danangwithkiet/danangwithkiet/main/image/da-nang-with-kiet-banner.jpg") center / cover no-repeat;
     }
+
 
     /* Profile */
     .profile {
@@ -112,6 +114,22 @@
     .social a:hover svg {
       opacity: 1;
     }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 4px solid #1c1c1c;
+      background: #000;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 
@@ -125,18 +143,10 @@
 
       <!-- LOGO -->
       <div class="avatar">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#00c6ff" />
-              <stop offset="100%" stop-color="#0072ff" />
-            </linearGradient>
-          </defs>
-          <circle cx="60" cy="60" r="56" fill="url(#g)" />
-          <path d="M45 30v60M45 60l30-30M45 60l30 30" stroke="#fff" stroke-width="8" stroke-linecap="round"
-            stroke-linejoin="round" fill="none" />
-        </svg>
+        <img src="https://raw.githubusercontent.com/danangwithkiet/danangwithkiet/main/image/da-nang-with-kiet-logo.jpg"
+          alt="Da Nang With Kiet Logo" />
       </div>
+
 
       <h1>Da Nang With Kiet</h1>
       <div class="role">Travel • Walking Tour • Local Life</div>
