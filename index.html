@@ -130,6 +130,35 @@
       height: 100%;
       object-fit: cover;
     }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .25);
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      transition: .25s ease;
+    }
+
+    .links a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
   </style>
 </head>
 
@@ -152,11 +181,49 @@
       <div class="role">Da Nang The Most Livable Coastal City</div>
 
       <div class="links">
-        <a href="https://www.youtube.com/@danangwithkiet" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/danangwithkiet" target="_blank">Facebook</a>
-        <a href="https://www.tiktok.com/@kietdanang365" target="_blank">TikTok</a>
-        <a href="https://www.instagram.com/danangwithkiet/" target="_blank">Instagram</a>
+
+        <a href="https://www.youtube.com/@danangwithkiet" target="_blank">
+          <span class="icon youtube">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M23.5 6.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C17.7 2.7 12 2.7 12 2.7s-5.7 0-8.6.3c-.4 0-1.3.1-2.1.9C.7 4.6.5 6.2.5 6.2S0 8.1 0 10v2c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.8.8 1.9.8 2.4.9 1.7.2 7.3.3 7.3.3s5.7 0 8.6-.3c.4 0 1.3-.1 2.1-.9.6-.7.8-2.3.8-2.3s.5-1.9.5-3.8v-2c0-1.9-.5-3.8-.5-3.8zM9.6 13.5V7.9l5.4 2.8-5.4 2.8z" />
+            </svg>
+          </span>
+          YouTube
+        </a>
+
+        <a href="https://www.facebook.com/danangwithkiet" target="_blank">
+          <span class="icon facebook">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3 1.8-4.7 4.6-4.7 1.3 0 2.4.1 2.7.1v3.1h-1.9c-1.5 0-1.8.7-1.8 1.7v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3C24 .6 23.4 0 22.7 0z" />
+            </svg>
+          </span>
+          Facebook
+        </a>
+
+        <a href="https://www.tiktok.com/@kietdanang365" target="_blank">
+          <span class="icon tiktok">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21 7.3c-1.5 0-3-.5-4.1-1.5v9.3c0 4.3-3.5 7.9-7.9 7.9S1.1 19.4 1.1 15.1 4.6 7.2 9 7.2c.4 0 .9 0 1.3.1v3.9c-.4-.1-.8-.2-1.3-.2-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4V0h3.8c.4 2.2 2.3 3.9 4.5 4.2v3.1z" />
+            </svg>
+          </span>
+          TikTok
+        </a>
+
+        <a href="https://www.instagram.com/danangwithkiet/" target="_blank">
+          <span class="icon instagram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 7.9A3.1 3.1 0 1 1 15.1 12 3.1 3.1 0 0 1 12 15.1zm4.9-8.6a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z" />
+            </svg>
+          </span>
+          Instagram
+        </a>
+
       </div>
+
 
       <!-- SOCIAL ICONS -->
       <div class="social">
